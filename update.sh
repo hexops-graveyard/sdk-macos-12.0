@@ -5,7 +5,7 @@ rm -rf ./root ./MacOSX12.0.sdk
 mkdir -p MacOSX12.0.sdk
 cp -R /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/* ./MacOSX12.0.sdk/
 
-# Remove unnecessary files (570M -> 146M)
+# Remove unnecessary files (570M -> 112M)
 rm -rf MacOSX12.0.sdk/usr/include/apache2
 rm -rf MacOSX12.0.sdk/usr/share/man/
 rm -rf MacOSX12.0.sdk/System/PrivateFrameworks/
@@ -14,6 +14,12 @@ rm -rf MacOSX12.0.sdk/usr/lib/swift
 rm -rf MacOSX12.0.sdk/System/iOSSupport/usr/lib/swift
 rm -rf MacOSX12.0.sdk/System/Library/Perl/
 
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/MusicKit.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Security.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/TabularData.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/RealityFoundation.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/CreateML.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Kernel.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/SwiftUI.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Ruby.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Python.framework
