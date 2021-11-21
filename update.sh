@@ -18,7 +18,6 @@ rm -rf MacOSX12.0.sdk/System/Library/Frameworks/MusicKit.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/TabularData.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/RealityFoundation.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/CreateML.framework
-rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Kernel.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/SwiftUI.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Ruby.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Python.framework
