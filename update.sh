@@ -5,9 +5,11 @@ rm -rf ./root ./MacOSX12.0.sdk
 mkdir -p MacOSX12.0.sdk
 cp -R /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/* ./MacOSX12.0.sdk/
 
-# Remove unnecessary files (574M -> 164M)
+# Remove unnecessary files (570M -> 146M)
+rm -rf MacOSX12.0.sdk/usr/include/apache2
 rm -rf MacOSX12.0.sdk/usr/share/man/
 rm -rf MacOSX12.0.sdk/System/PrivateFrameworks/
+rm -rf MacOSX12.0.sdk/System/Library/PrivateFrameworks
 rm -rf MacOSX12.0.sdk/usr/lib/swift
 rm -rf MacOSX12.0.sdk/System/iOSSupport/usr/lib/swift
 rm -rf MacOSX12.0.sdk/System/Library/Perl/
