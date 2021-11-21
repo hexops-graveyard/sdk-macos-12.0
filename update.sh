@@ -15,7 +15,6 @@ rm -rf MacOSX12.0.sdk/System/iOSSupport/usr/lib/swift
 rm -rf MacOSX12.0.sdk/System/Library/Perl/
 
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/MusicKit.framework
-rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Security.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/TabularData.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/RealityFoundation.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/CreateML.framework
