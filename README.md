@@ -1,8 +1,8 @@
-# macOS 11.3 Big Sur SDK for Mach Engine
+# macOS 12.0 Monterey SDK for Mach Engine
 
 This repository contains native system binary files required to build [Mach Engine](https://github.com/hexops/mach) for macOS, from any host OS.
 
-In specific, it contains a minimal 164M copy of the macOS 11.3 SDK from Xcode developer tools.
+In specific, it contains a minimal 164M copy of the macOS 12.0 SDK from Xcode developer tools.
 
 ## LICENSE
 

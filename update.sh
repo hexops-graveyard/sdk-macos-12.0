@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 set -ex
 
-rm -rf ./root ./MacOSX11.3.sdk
-mkdir -p MacOSX11.3.sdk
-cp -R /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/* ./MacOSX11.3.sdk/
+rm -rf ./root ./MacOSX12.0.sdk
+mkdir -p MacOSX12.0.sdk
+cp -R /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/* ./MacOSX12.0.sdk/
 
 # Hack: link some header files under a common folder to workaround an issue in Zig:
 # https://github.com/ziglang/zig/issues/8811
 
-pushd ./MacOSX11.3.sdk/usr/include/
+pushd ./MacOSX12.0.sdk/usr/include/
 cp -R ../../System/Library/Frameworks/Cocoa.framework/Versions/Current/Headers Cocoa
 cp -R ../../System/Library/Frameworks/Foundation.framework/Versions/Current/Headers Foundation
 cp -R ../../System/Library/Frameworks/AppKit.framework/Versions/Current/Headers AppKit
@@ -67,37 +67,37 @@ cp -R ../../System/Library/Frameworks/OpenGL.framework/Versions/Current/Headers 
 popd
 
 # Remove unnecessary files (574M -> 164M)
-rm -rf MacOSX11.3.sdk/usr/share/man/
-rm -rf MacOSX11.3.sdk/System/PrivateFrameworks/
-rm -rf MacOSX11.3.sdk/usr/lib/swift
-rm -rf MacOSX11.3.sdk/System/iOSSupport/usr/lib/swift
-rm -rf MacOSX11.3.sdk/System/Library/Perl/
+rm -rf MacOSX12.0.sdk/usr/share/man/
+rm -rf MacOSX12.0.sdk/System/PrivateFrameworks/
+rm -rf MacOSX12.0.sdk/usr/lib/swift
+rm -rf MacOSX12.0.sdk/System/iOSSupport/usr/lib/swift
+rm -rf MacOSX12.0.sdk/System/Library/Perl/
 
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/SwiftUI.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/Ruby.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/Python.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/SwiftUI.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/Combine.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/Accelerate.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/WebKit.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/Python.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/RealityKit.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/AVFoundation.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/Intents.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/CoreTelephony.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/AudioToolbox.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/Quartz.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/OpenCL.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/CryptoKit.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/DriverKit.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/Tcl.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/Tk.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/IOBluetooth.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/DiscRecording.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/JavaScriptCore.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/HIDDriverKit.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/GameKit.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/SceneKit.framework
-rm -rf MacOSX11.3.sdk/System/Library/Frameworks/WidgetKit.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/SwiftUI.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Ruby.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Python.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/SwiftUI.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Combine.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Accelerate.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/WebKit.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Python.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/RealityKit.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/AVFoundation.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Intents.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/CoreTelephony.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/AudioToolbox.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Quartz.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/OpenCL.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/CryptoKit.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/DriverKit.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Tcl.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Tk.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/IOBluetooth.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/DiscRecording.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/HIDDriverKit.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/GameKit.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/SceneKit.framework
+rm -rf MacOSX12.0.sdk/System/Library/Frameworks/WidgetKit.framework
 
-mv MacOSX11.3.sdk root
+mv MacOSX12.0.sdk root
