@@ -46,3 +46,9 @@ rm -rf MacOSX12.0.sdk/System/Library/Frameworks/SceneKit.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/WidgetKit.framework
 
 mv MacOSX12.0.sdk root
+
+# Remove reexported libraries section from all tbd files. These have absolute paths that zld would
+# not be able to resolve unless sysroot was set.
+# See https://github.com/hexops/mach/issues/108
+go build ./strip-reexported.go 
+find root/System -type f -name "*.tbd" -print0 | xargs -P128 -n1 -0 -- ./strip-reexported
