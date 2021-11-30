@@ -17,10 +17,6 @@ uuids:
     value:           1352A9B5-BCB6-3F0E-868D-CAC4CC6125E5
 install-name:    '/System/Library/Frameworks/SecurityFoundation.framework/Versions/A/SecurityFoundation'
 current-version: 55253
-reexported-libraries:
-  - targets:         [ x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst, 
-                       arm64e-macos, arm64e-maccatalyst ]
-    libraries:       [ '/System/Library/Frameworks/Security.framework/Versions/A/Security' ]
 exports:
   - targets:         [ arm64e-macos, x86_64-macos, x86_64-maccatalyst, arm64e-maccatalyst, 
                        arm64-macos, arm64-maccatalyst ]

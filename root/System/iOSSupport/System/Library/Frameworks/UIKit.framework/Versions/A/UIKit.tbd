@@ -10,11 +10,6 @@ uuids:
     value:           9CAE85A4-191F-35AD-A9FB-CCC40A47554C
 install-name:    '/System/iOSSupport/System/Library/Frameworks/UIKit.framework/Versions/A/UIKit'
 current-version: 5073
-reexported-libraries:
-  - targets:         [ x86_64-maccatalyst, arm64-maccatalyst, arm64e-maccatalyst ]
-    libraries:       [ '/System/iOSSupport/System/Library/PrivateFrameworks/DocumentManager.framework/Versions/A/DocumentManager', 
-                       '/System/iOSSupport/System/Library/PrivateFrameworks/ShareSheet.framework/Versions/A/ShareSheet', 
-                       '/System/iOSSupport/System/Library/PrivateFrameworks/UIKitCore.framework/Versions/A/UIKitCore' ]
 --- !tapi-tbd
 tbd-version:     4
 targets:         [ x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst, 
@@ -633,9 +628,6 @@ uuids:
     value:           20DB5C7C-3EBE-3ABD-A31E-3DD2AD974257
 install-name:    '/System/iOSSupport/System/Library/PrivateFrameworks/UIKitCore.framework/Versions/A/UIKitCore'
 current-version: 5073
-reexported-libraries:
-  - targets:         [ x86_64-maccatalyst, arm64-maccatalyst, arm64e-maccatalyst ]
-    libraries:       [ '/System/Library/PrivateFrameworks/UIFoundation.framework/Versions/A/UIFoundation' ]
 exports:
   - targets:         [ x86_64-maccatalyst, arm64e-maccatalyst, arm64-maccatalyst ]
     symbols:         [ '$ld$add$os10.0$_OBJC_CLASS_$_NSFileProviderExtension', '$ld$add$os10.0$_OBJC_METACLASS_$_NSFileProviderExtension', 

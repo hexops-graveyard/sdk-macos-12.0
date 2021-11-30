@@ -11,9 +11,6 @@ uuids:
 install-name:    '/System/iOSSupport/System/Library/Frameworks/RealityKit.framework/Versions/A/RealityKit'
 current-version: 161.35
 swift-abi-version: 7
-reexported-libraries:
-  - targets:         [ x86_64-maccatalyst, arm64-maccatalyst, arm64e-maccatalyst ]
-    libraries:       [ '/System/iOSSupport/System/Library/Frameworks/RealityFoundation.framework/Versions/A/RealityFoundation' ]
 exports:
   - targets:         [ x86_64-maccatalyst, arm64e-maccatalyst, arm64-maccatalyst ]
     symbols:         [ '$ld$hide$os13.0$_$s10RealityKit13RotationOrderO05sceneB0ACvgZ', 

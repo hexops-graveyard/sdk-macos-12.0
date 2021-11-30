@@ -10,9 +10,6 @@ uuids:
     value:           B1082808-4790-390C-9232-1235EED55D1C
 install-name:    '/System/iOSSupport/System/Library/Frameworks/LinkPresentation.framework/Versions/A/LinkPresentation'
 current-version: 185
-reexported-libraries:
-  - targets:         [ x86_64-maccatalyst, arm64-maccatalyst, arm64e-maccatalyst ]
-    libraries:       [ '/System/Library/PrivateFrameworks/URLFormatting.framework/Versions/A/URLFormatting' ]
 exports:
   - targets:         [ x86_64-maccatalyst, arm64e-maccatalyst, arm64-maccatalyst ]
     symbols:         [ _LPErrorDomain, _LPLogChannelFetching, _LPLogChannelPlugin, 

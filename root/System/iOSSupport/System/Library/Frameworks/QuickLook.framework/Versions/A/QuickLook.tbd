@@ -10,9 +10,6 @@ uuids:
     value:           4ACA348F-A8C1-3370-835F-9593E42AE250
 install-name:    '/System/iOSSupport/System/Library/Frameworks/QuickLook.framework/Versions/A/QuickLook'
 current-version: 847
-reexported-libraries:
-  - targets:         [ x86_64-maccatalyst, arm64-maccatalyst, arm64e-maccatalyst ]
-    libraries:       [ '/System/Library/PrivateFrameworks/QuickLookIosmac.framework/Versions/A/QuickLookIosmac' ]
 exports:
   - targets:         [ x86_64-maccatalyst, arm64e-maccatalyst, arm64-maccatalyst ]
     symbols:         [ _QLDetachedSceneActivityType, _QLDetachedSceneActivityURLsKey, 

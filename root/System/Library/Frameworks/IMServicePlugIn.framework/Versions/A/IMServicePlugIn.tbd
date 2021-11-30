@@ -10,9 +10,6 @@ uuids:
     value:           FC2A7936-432A-3469-9225-DC94F4555FC4
 install-name:    '/System/Library/Frameworks/IMServicePlugIn.framework/Versions/A/IMServicePlugIn'
 current-version: 1000
-reexported-libraries:
-  - targets:         [ x86_64-macos, arm64-macos, arm64e-macos ]
-    libraries:       [ '/System/Library/Frameworks/IMServicePlugIn.framework/Versions/A/Frameworks/IMServicePlugInSupport.framework/Versions/A/IMServicePlugInSupport' ]
 exports:
   - targets:         [ x86_64-macos, arm64e-macos, arm64-macos ]
     objc-classes:    [ IMFileTransferInputStream, IMFileTransferOutputStream, IMServicePlugInFileTransfer, 

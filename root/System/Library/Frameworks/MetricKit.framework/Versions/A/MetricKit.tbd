@@ -16,10 +16,6 @@ uuids:
   - target:          arm64e-maccatalyst
     value:           E823C736-FFCB-3D63-BC25-BDE241DA0E16
 install-name:    '/System/Library/Frameworks/MetricKit.framework/Versions/A/MetricKit'
-reexported-libraries:
-  - targets:         [ x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst, 
-                       arm64e-macos, arm64e-maccatalyst ]
-    libraries:       [ '/System/Library/PrivateFrameworks/SignpostMetrics.framework/Versions/A/SignpostMetrics' ]
 exports:
   - targets:         [ x86_64-macos, arm64e-macos, x86_64-maccatalyst, arm64e-maccatalyst, 
                        arm64-macos, arm64-maccatalyst ]

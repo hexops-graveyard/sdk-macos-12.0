@@ -9,9 +9,6 @@ uuids:
   - target:          arm64e-macos
     value:           7F010126-ECEA-3092-A946-2F04F503EBB7
 install-name:    '/System/Library/Frameworks/AVKit.framework/Versions/A/AVKit'
-reexported-libraries:
-  - targets:         [ x86_64-macos, arm64-macos, arm64e-macos ]
-    libraries:       [ '/System/Library/PrivateFrameworks/AVKitCore.framework/Versions/A/AVKitCore' ]
 exports:
   - targets:         [ arm64e-macos, x86_64-macos, arm64-macos ]
     symbols:         [ _AVAddAudibleMediaSelectionOptionsToMenu, _AVAddLegibleMediaSelectionOptionsToMenu, 

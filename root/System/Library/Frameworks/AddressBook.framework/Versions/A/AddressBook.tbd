@@ -10,11 +10,6 @@ uuids:
     value:           9771BACF-68C5-37D4-A1DC-3E7B0E8010FA
 install-name:    '/System/Library/Frameworks/AddressBook.framework/Versions/A/AddressBook'
 current-version: 2496.0.1
-reexported-libraries:
-  - targets:         [ x86_64-macos, arm64-macos, arm64e-macos ]
-    libraries:       [ '/System/Library/PrivateFrameworks/AddressBookCore.framework/Versions/A/AddressBookCore', 
-                       '/System/Library/PrivateFrameworks/ContactsPersistence.framework/Versions/A/ContactsPersistence', 
-                       '/usr/lib/libobjc.A.dylib' ]
 exports:
   - targets:         [ x86_64-macos, arm64e-macos, arm64-macos ]
     symbols:         [ _ABAddressBookLocalizedString, _ABAddressesAttribute, _ABAddressesGroupAttribute, 
@@ -707,10 +702,6 @@ uuids:
     value:           1E7E6DD2-0E41-3B59-A7A4-6EB3BB8A798F
 install-name:    '/System/Library/PrivateFrameworks/AddressBookCore.framework/Versions/A/AddressBookCore'
 current-version: 2496.0.1
-reexported-libraries:
-  - targets:         [ x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst, 
-                       arm64e-macos, arm64e-maccatalyst ]
-    libraries:       [ '/System/Library/PrivateFrameworks/ContactsPersistence.framework/Versions/A/ContactsPersistence' ]
 exports:
   - targets:         [ x86_64-maccatalyst, x86_64-macos, arm64e-maccatalyst, arm64e-macos, 
                        arm64-macos, arm64-maccatalyst ]

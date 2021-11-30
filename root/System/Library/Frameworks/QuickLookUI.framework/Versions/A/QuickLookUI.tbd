@@ -10,9 +10,6 @@ uuids:
     value:           326D2CFF-9887-3566-9BFF-E2758C0123E5
 install-name:    '/System/Library/Frameworks/QuickLookUI.framework/Versions/A/QuickLookUI'
 current-version: 0
-reexported-libraries:
-  - targets:         [ x86_64-macos, arm64-macos, arm64e-macos ]
-    libraries:       [ '/System/Library/Frameworks/QuickLook.framework/Versions/A/QuickLook' ]
 exports:
   - targets:         [ x86_64-macos ]
     weak-symbols:    [ __ZTINSt3__117bad_function_callE, __ZTSNSt3__117bad_function_callE ]

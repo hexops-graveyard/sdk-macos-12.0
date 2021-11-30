@@ -10,9 +10,6 @@ uuids:
     value:           D7680324-789C-370E-8164-9741C34C7FD6
 install-name:    '/System/Library/Frameworks/LinkPresentation.framework/Versions/A/LinkPresentation'
 current-version: 185
-reexported-libraries:
-  - targets:         [ x86_64-macos, arm64-macos, arm64e-macos ]
-    libraries:       [ '/System/Library/PrivateFrameworks/URLFormatting.framework/Versions/A/URLFormatting' ]
 exports:
   - targets:         [ x86_64-macos, arm64e-macos, arm64-macos ]
     symbols:         [ _LPErrorDomain, _LPLogChannelFetching, _LPLogChannelPlugin, 
