@@ -30,7 +30,8 @@ rm -rf MacOSX12.0.sdk/System/Library/Frameworks/RealityKit.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/AVFoundation.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Intents.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/CoreTelephony.framework
-rm -rf MacOSX12.0.sdk/System/Library/Frameworks/AudioToolbox.framework
+# Required for zig-gamedev to build miniaudio
+#rm -rf MacOSX12.0.sdk/System/Library/Frameworks/AudioToolbox.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/Quartz.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/OpenCL.framework
 rm -rf MacOSX12.0.sdk/System/Library/Frameworks/CryptoKit.framework
